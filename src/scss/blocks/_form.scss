@@ -1,0 +1,150 @@
+.section-form {
+    &__title {
+        margin: 0 auto 30px auto;
+        max-width: 460px;
+        text-align: center;
+    }
+}
+
+.form {
+    display: grid;
+    place-items: center;
+    &__content {
+        display: grid;
+        row-gap: 1.5rem;
+    }
+    &__input,
+    &__label,
+    &__submit {
+        font-size: 16px;
+        border: 0;
+        outline: none;
+    }
+    &__box {
+        position: relative;
+        width: 370px;
+        height: 60px;
+        @include phone {
+            width: 300px;
+        }
+    }
+    &__input {
+        position: absolute;
+        padding: 18px;
+        border: 1.5px solid var(--accent);
+        border-radius: 0.2em;
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s;
+        z-index: 10;
+        &::placeholder {
+            transition: opacity 0.5s;
+        }
+    }
+    &__label {
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        z-index: 100;
+        transition: 0.2s;
+        pointer-events: none;
+        opacity: 0;
+    }
+    &__shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.2em;
+        background-color: var(--accent);
+    }
+    &__submit {
+        padding: 1rem 1.5rem;
+        width: 100%;
+        height: 60px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 0.2em;
+        text-align: center;
+        color: var(--accent);
+        background-color: #93F516;
+        transition: opacity 0.2s ease-in;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.form__input:focus::placeholder {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.form__input:focus,
+.form__input:not(:placeholder-shown).form__input:not(:focus) {
+    padding: 28px 18px 18px;
+    transform: translate(-8px, -8px);
+    animation: input-animation 0.5s;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+    opacity: 1;
+    top: 2px;
+    left: 12px;
+    transition: 0.3s;
+}
+
+@keyframes input-animation {
+    0% {
+        transform: translate(0);
+    }
+    40% {
+        transform: translate(-9px, -9px);
+    }
+    60% {
+        transform: translate(-7px, -7px);
+    }
+}
+
+.thank-popup{
+    display: none;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.thank-popup__content {
+    padding: 100px 10px 50px 10px;
+    font-size: 22px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+    background: url("@img/confetti.webp") 50% 50%/cover no-repeat #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.thank-popup__icon {
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+#thank-popup__message {
+    text-align: center;
+}

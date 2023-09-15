@@ -1,0 +1,1 @@
+document.getElementById('data').innerHTML = `<p>TYTTOVAR © Всі права захищені ${new Date().getFullYear()}</p>`;

@@ -1,0 +1,34 @@
+<section class="section-form indents" id="section-form">
+    <div class="section-form__container">
+        <h2 class="section-form__title title">Наш менеджер зв'яжеться з вами після оформлення замовлення</h2>
+        <div class="form">
+            <form action="send.php" class="form__content" method="POST" accept-charset="UTF-8">
+
+                <input type="hidden" name="currentURL" id="currentURL" value="">
+
+                <div class="form__box">
+                    <input type="text" class="form__input" name="name" placeholder="Введіть ваше прізвище та ім'я" required>
+                    <label for="name" class="form__label">прізвище та ім'я</label>
+                    <div class="form__shadow"></div>
+                </div>
+
+                <div class="form__box">
+                    <input type="tel" class="form__input" id="phone" name="phone" placeholder="Введіть ваш номер телефону" required>
+                    <label for="phone" class="form__label">телефон</label>
+                    <div class="form__shadow"></div>
+                </div>
+
+                <div class="form__button">
+                    <input class="form__submit" type="submit" value="Оформити заявку">
+                </div>
+            </form>
+        </div>
+
+        <div id="thank-popup" class="thank-popup">
+            <div class="thank-popup__content">
+                <img class="thank-popup__icon" loading="lazy" src="@img/icons/confirmed.svg" alt="Успішна покупка">
+                <p id="thank-popup__message">Вашу покупку успішно оформлено. Ми зв'яжемося з вами найближчим часом.</p>
+            </div>
+        </div>
+    </div>
+</section>
