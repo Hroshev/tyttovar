@@ -4,7 +4,6 @@ import form from "./modules/form.js"
 import popup from "./modules/popup.js"
 import swiper from "./modules/swiper.js"
 import phoneMask from "./modules/phoneMask.js"
-import video from "./modules/video.js"
 import date from "./modules/date.js"
 
 

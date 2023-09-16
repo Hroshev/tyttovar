@@ -7,8 +7,8 @@
 
 // Section or Pages SCSS-files imports
 @import "./blocks/nav";
+@import "./blocks/header";
 
-@import "./blocks/cereal-organizer.scss";
 @import "./blocks/catalog";
 @import "./blocks/form";
 @import "./blocks/shipping";
@@ -16,6 +16,9 @@
 @import "./blocks/popup";
 
 @import "./blocks/footer";
+
+// Product Page
+@import "./blocks/cereal-organizer.scss";
 
 // Import Swiper + navigation, pagination modules
 @import "./blocks/swiper";

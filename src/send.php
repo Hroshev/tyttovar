@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->CharSet = 'UTF-8';
 
         // Отправитель и получатель
-        $mail->setFrom('shop@tyttovar.com', 'Заявка на товар');
+        $mail->setFrom($smtpUsername, 'Заявка на товар');
         $mail->addAddress('grosheff.ivan@gmail.com', 'Ivan');
 
         // Тема и тело письма

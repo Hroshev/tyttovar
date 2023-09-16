@@ -1,9 +1,5 @@
 .header-product {
-    margin-top: 54px;
     padding: 20px 0px 40px 0px;
-    &__container {
-        max-width: 460px;
-    }
     &__inner {
         background-color: #F5CA16;
     }
@@ -32,7 +28,7 @@
     }
     &__feature {
         margin-bottom: 4px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         color: var(--accent);
         span {
@@ -88,9 +84,6 @@
 
 .video-product {
     padding-bottom: 40px;
-    &__container {
-        max-width: 460px;
-    }
     &__video {
         width: 100%;
         vertical-align: top;
@@ -98,9 +91,6 @@
 }
 
 .specifications {
-    &__container {
-        max-width: 460px;
-    }
     &__title {
         margin-bottom: 30px;
         text-transform: uppercase;
@@ -127,9 +117,6 @@
 }
 
 .meta {
-    &__container {
-        max-width: 460px;
-    }
     &__title {
         margin-bottom: 30px;
         text-transform: uppercase;
@@ -166,9 +153,6 @@
 }
 
 .feedback {
-    &__container {
-        max-width: 460px;
-    }
     &__title {
         margin-bottom: 30px;
         text-transform: uppercase;
@@ -178,8 +162,6 @@
         justify-content: space-between;
         flex-direction: column;
         gap: 20px;
-    }
-    &__item {
     }
     &__user {
         display: flex;
@@ -225,9 +207,6 @@
 }
 
 .order {
-    &__container {
-        max-width: 460px;
-    }
     &__title {
         margin-bottom: 40px;
         text-transform: uppercase;

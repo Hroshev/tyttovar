@@ -8,15 +8,18 @@
 
 	<body class="main__body">
 		@@include('html/_nav.html')
-		<main class="main">
+		<div class="sticky-nav">
+			@@include('html/_header.html')
+			<main>
 
-			@@include('html/_catalog.html')
-
-			@@include('html/_shipping.html')
-
-			@@include('html/_testimonials.html')
-
-		</main>
+				@@include('html/_catalog.html')
+	
+				@@include('html/_shipping.html')
+	
+				@@include('html/_testimonials.html')
+	
+			</main>
+		</div>
 		@@include('html/_footer.html')
 		<script src="js/app.min.js" defer></script>
 	</body>
