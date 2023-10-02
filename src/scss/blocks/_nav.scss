@@ -25,6 +25,7 @@
         font-weight: 600;
         color: var(--accent);
         transition: opacity;
+        z-index: 5;
         &:hover {
             opacity: 0.7;
         }
@@ -89,7 +90,7 @@
         z-index: 4;
         @include tablet {
             position: fixed;
-            padding: 76px 24px 30px 20px;
+            padding: 120px 24px 30px 20px;
             top: 0;
             left: -100%;
             width: 100%;
