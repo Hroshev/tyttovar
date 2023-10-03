@@ -24,16 +24,12 @@
 						</div>
 						<div class="header-product__content">
 							<h4 class="header-product__feature">Пропозиція діє <span id="startDate"></span> до <span id="currentDate"></span></h4>
-							<div class="header-product__price">
-								<div class="header-product__price--old">
-									<p>Звичайна ціна:</p>
-									<i>1 300грн.</i>
-								</div>
-								<div class="header-product__price--new">
-									<p>Ціна зараз:</p>
-									<i>980грн.</i>
-								</div>
-							</div>
+
+							@@include('html/_promo.html', {
+								"old": "1 300грн.",
+								"new": "980грн."
+							})
+
 							<div class="header-product__button-wrapper">
 								<a class="header-product__button order-button" href="#section-form">Оформити замовлення</a>
 							</div>
@@ -104,7 +100,7 @@
 						</div>
 					</div>
 				</section>
-	
+
 				<section class="feedback indents" id="testimonials">
 					<div class="feedback__container">
 						<h2 class="feedback__title title">Відгуки</h2>
@@ -113,7 +109,10 @@
 							<li class="feedback__item">
 								<div class="feedback__user">
 									<img loading="lazy" src="@img/cereal-organizer/reviews/feedback-6.webp" alt="Фотографія покупця">
-									<h5 class="feedback__user-name">Пилипчук Наталья</h5>
+									<div class="feedback__wrapper">
+										<h5 class="feedback__user-name">Пилипчук Наталья</h5>
+										<p class="feedback__date">2 жовтня 2023 р.</p>
+									</div>
 								</div>
 								<div class="feedback__rating">
 									<span>5</span>
@@ -129,7 +128,10 @@
 							<li class="feedback__item">
 								<div class="feedback__user">
 									<img loading="lazy" src="@img/cereal-organizer/reviews/feedback-5.webp" alt="Фотографія покупця">
-									<h5 class="feedback__user-name">Луцюк Ольга</h5>
+									<div class="feedback__wrapper">
+										<h5 class="feedback__user-name">Луцюк Ольга</h5>
+										<p class="feedback__date">2 жовтня 2023 р.</p>
+									</div>
 								</div>
 								<div class="feedback__rating">
 									<span>5</span>
@@ -144,7 +146,10 @@
 							<li class="feedback__item">
 								<div class="feedback__user">
 									<img loading="lazy" src="@img/cereal-organizer/reviews/feedback-2.webp" alt="Фотографія покупця">
-									<h5 class="feedback__user-name">Каращук Марія</h5>
+									<div class="feedback__wrapper">
+										<h5 class="feedback__user-name">Каращук Марія</h5>
+										<p class="feedback__date">2 жовтня 2023 р.</p>
+									</div>
 								</div>
 								<div class="feedback__rating">
 									<span>5</span>
@@ -159,7 +164,10 @@
 							<li class="feedback__item">
 								<div class="feedback__user">
 									<img loading="lazy" src="@img/cereal-organizer/reviews/feedback-1.webp" alt="Фотографія покупця">
-									<h5 class="feedback__user-name">Лагочева Світлана</h5>
+									<div class="feedback__wrapper">
+										<h5 class="feedback__user-name">Лагочева Світлана</h5>
+										<p class="feedback__date">2 жовтня 2023 р.</p>
+									</div>
 								</div>
 								<div class="feedback__rating">
 									<span>5</span>
@@ -169,42 +177,10 @@
 							</li>
 	
 						</ul>
-						
 					</div>
 				</section>
 	
-				<section class="order indents" id="shipping">
-					<div class="order__container">
-						<h2 class="order__title title">Процес замовлення</h2>
-						<ul class="order__list">
-	
-							<li class="order__item">
-								<img class="order__icon" loading="lazy" src="@img/icons/write.svg" alt="ЗАЯВКА">
-								<h4 class="order__item-title">ЗАЯВКА</h4>
-								<p class="order__text">Залишіть заявку на сайті</p>
-							</li>
-	
-							<li class="order__item">
-								<img class="order__icon" loading="lazy" src="@img/icons/phone.svg" alt="ДЗВІНОК">
-								<h4 class="order__item-title">ДЗВІНОК</h4>
-								<p class="order__text">Наш менеджер уточнить деталі замовлення</p>
-							</li>
-	
-							<li class="order__item">
-								<img class="order__icon" loading="lazy" src="@img/icons/send.svg" alt="ВІДПРАВКА">
-								<h4 class="order__item-title">ВІДПРАВКА</h4>
-								<p class="order__text">Доставляємо  товар протягом 3 днів</p>
-							</li>
-	
-							<li class="order__item">
-								<img class="order__icon" loading="lazy" src="@img/icons/post.svg" alt="ОТРИМАННЯ">
-								<h4 class="order__item-title">ОТРИМАННЯ</h4>
-								<p class="order__text">Оплата при отриманні на пошті</p>
-							</li>
-	
-						</ul>
-					</div>
-				</section>
+				@@include('html/_order.html')
 	
 				@@include('html/_form.html')
 	

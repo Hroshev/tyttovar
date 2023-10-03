@@ -9,7 +9,7 @@
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
-    z-index: 50;
+    z-index: 1000;
     transition: all 0.8s ease 0s;
     &__body {
         min-height: 100%;

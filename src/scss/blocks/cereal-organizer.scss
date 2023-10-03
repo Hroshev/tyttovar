@@ -38,47 +38,6 @@
             color: #FF2500;
         }
     }
-    &__price {
-        display: flex;
-        align-items: center;
-    }
-    &__price--old,
-    &__price--new {
-        padding: 10px 24px;
-        width: 100%;
-        text-align: center;
-    }
-    &__price--old p,
-    &__price--new p {
-        font-size: 14px;
-        color: var(--secondary-color);
-    }
-    &__price--old i,
-    &__price--new i {
-        font-size: 18px;
-        font-weight: 600;
-        font-style: normal;
-        color: var(--secondary-color);
-    }
-    &__price--old {
-        background-color: #4D5155;
-    }
-    &__price--old i {
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 2px;
-            transform: translate(-50%, -50%);
-            background-color: #E43315;
-        }
-    }
-    &__price--new {
-        background-color: #E43315;
-    }
     &__button-wrapper {
         margin-top: 26px;
         text-align: center;
@@ -180,6 +139,10 @@
         font-size: 16px;
         color: var(--accent);
     }
+    &__date {
+        font-size: 16px;
+        color: #727272;
+    }
     &__rating {
         margin: 10px 0px;
         display: flex;
@@ -203,40 +166,8 @@
         gap: 5px;
         img {
             width: 100%;
-            max-width: 160px;
+            max-width: 150px;
             height: auto;
         }
-    }
-}
-
-.order {
-    &__title {
-        margin-bottom: 40px;
-        text-transform: uppercase;
-    }
-    &__list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-    }
-    &__item {
-        text-align: center;
-    }
-    &__icon {
-        width: 80px;
-        height: 80px;
-    }
-    &__item-title {
-        margin: 14px 0px 4px 0px;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: var(--accent);
-    }
-    &__text {
-        margin: 0 auto;
-        font-size: 14px;
-        max-width: 110px;
-        color: var(--accent);
     }
 }
