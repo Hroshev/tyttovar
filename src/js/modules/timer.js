@@ -17,6 +17,6 @@ function updateTimer() {
 }
 
 if (blockHours && blockMinutes && blockSecond) {
-    updateTimer(); // Обновляем таймер сразу
-    setInterval(updateTimer, 1000); // Обновляем таймер каждую секунду
+    updateTimer();
+    setInterval(updateTimer, 1000);
 }
