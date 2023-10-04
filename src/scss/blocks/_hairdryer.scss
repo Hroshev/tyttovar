@@ -1,0 +1,157 @@
+.header-hairdryer {
+    &__image {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.stailer-discount {
+    &--indents {
+        padding-bottom: 45px;
+    }
+    &__image {
+        width: 100%;
+        text-align: center;
+    }
+    &__price {
+        margin: 20px 0px;
+    }
+    &__quantity {
+        margin-bottom: 20px;
+        padding: 8px;
+        text-align: center;
+    }
+    &__quantity-text {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--accent);
+        span {
+            padding: 3px 6px;
+            border-radius: 5px;
+            background-color: #FA4CB066;
+        }
+    }
+    &__wrapper {
+        text-align: center;
+    }
+}
+
+.stailer-promo {
+    display: flex;
+    align-items: center;
+    &__price--old {
+        padding: 12px 8px;
+        width: 100%;
+        max-width: 156px;
+        text-align: center;
+    }
+    &__price--new {
+        padding: 12px 10px;
+        width: 100%;
+        text-align: center;
+    }
+    &__price--old p,
+    &__price--new p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__price--old i {
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+    }
+    &__price--new i {
+        font-size: 24px;
+        font-weight: 600;
+        font-style: normal;
+    }
+    &__price--old {
+        color: var(--accent);
+        background-color: #FFFFFF;
+    }
+    &__price--new {
+        border-radius: 10px 0px 0px 10px;
+        color: var(--accent);
+        background-color: #FA4CB0;
+    }
+    &__price--old i {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 2px;
+            transform: translate(-50%, -50%);
+            background-color: var(--accent);
+        }
+    }
+}
+
+.specs-hairdryer {
+    margin-bottom: 45px;
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__image {
+        width: 100%;
+        text-align: center;
+    }
+    &__bg {
+        background-color: #FC4AAA;
+    }
+    &__list {
+        padding: 10px 0px 20px 16px !important;
+    }
+    &__item {
+        position: relative;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--accent);
+        span {
+            font-weight: 400;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -16px;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 12px;
+            background: url("@img/icons/arrow-list.svg") 50% 50%/cover no-repeat;
+        }
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.perks-hairdryer {
+    margin-bottom: 45px;
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__image {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.specifics-hairdryer {
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__image {
+        width: 100%;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
