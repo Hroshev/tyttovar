@@ -22,7 +22,7 @@
         text-align: center;
     }
     &__quantity-text {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--accent);
         span {
@@ -52,11 +52,11 @@
     }
     &__price--old p,
     &__price--new p {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
     }
     &__price--old i {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
         font-style: normal;
     }
@@ -89,7 +89,66 @@
     }
 }
 
-.specs-hairdryer {
+.stailer-benefits {
+    padding-bottom: 45px;
+    &__item {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 330px;
+        border-radius: 10px;
+        border: 0.5px solid rgba(0, 0, 0, 0.10);
+        background-color: var(--secondary-color);
+        box-shadow: 0px 4px 4px 0px rgba(65, 65, 65, 0.25);
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 46px;
+    }
+    &__icon {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        background: url("@img/icons/tick.svg") 50% 50%/cover no-repeat;
+    }
+    &__title {
+        padding: 26px 20px 20px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--accent);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.stailer-meta {
+    margin-bottom: 45px;
+    &__image {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.features-hairdryer {
+    margin-bottom: 45px;
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__image {
+        img {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__image:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.perks-hairdryer {
     margin-bottom: 45px;
     &__title {
         margin-bottom: 20px;
@@ -99,15 +158,23 @@
         width: 100%;
         text-align: center;
     }
+}
+
+.specs-hairdryer {
+    margin-bottom: 45px;
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
     &__bg {
-        background-color: #FC4AAA;
+        background-color: #E5E8EE;
     }
     &__list {
-        padding: 10px 0px 20px 16px !important;
+        padding: 20px 0px 33px 16px !important;
     }
     &__item {
         position: relative;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--accent);
         span {
@@ -125,33 +192,78 @@
         }
     }
     &__item:not(:last-child) {
-        margin-bottom: 10px;
-    }
-}
-
-.perks-hairdryer {
-    margin-bottom: 45px;
-    &__title {
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
-    &__image {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-.specifics-hairdryer {
-    &__title {
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
-    &__image {
-        width: 100%;
-        text-align: center;
+        margin-bottom: 14px;
     }
     &__wrapper {
         margin-top: 30px;
+        text-align: center;
+    }
+}
+
+.reviews {
+    &__container {
+        max-width: 266px;
+    }
+    &__title {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    &__user {
+        display: flex;
+        gap: 8px;
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    &__wrapper {
+        margin-bottom: 12px;
+    }
+    &__user-name {
+        margin-bottom: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--accent);
+    }
+    &__date {
+        font-size: 14px;
+        font-weight: 400;
+        color: #727272;
+    }
+    &__rating {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        span {
+            font-weight: 600;
+        }
+    }
+    &__text {
+        margin-bottom: 14px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--accent);
+    }
+    &__user-photo {
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__wrapper-button {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+.baner-hairdryer {
+    &__image {
+        width: 100%;
         text-align: center;
     }
 }
